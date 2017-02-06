@@ -30,10 +30,6 @@ const regexFromPath = (path, endRegExp) =>
 
 const root = dirname(nearest('package.json'));
 
-// Get the absolute path to the `/intl` directory containing message
-// translation files.
-const defaultMessgesDir = join(root, 'intl', 'messages');
-
 // Get the absolute path to the `intl` package.
 const intlPath = dirname(require.resolve('intl/package.json'));
 const intlLocaleDataPath = join(intlPath, 'locale-data', 'jsonp');
