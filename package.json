@@ -1,0 +1,44 @@
+{
+  "name": "webpack-config-intl",
+  "version": "0.1.0",
+  "author": "Neal Granger <neal@nealg.com>",
+  "description": "Add support for intl to your [webpack] build.",
+  "main": "intl.webpack.config.js",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/babel -s -d . src",
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpack-config/webpack-config-intl.git"
+  },
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/webpack-config/webpack-config-intl/issues"
+  },
+  "homepage": "https://github.com/webpack-config/webpack-config-intl#readme",
+  "dependencies": {
+    "bundle-loader": "^0.5.4",
+    "chalk": "^1.1.3",
+    "find-nearest-file": "^1.0.0",
+    "locale-emoji": "^0.1.0",
+    "lodash": "^4.17.4",
+    "webpack-partial": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
+    "babel-preset-metalab": "^0.1.4",
+    "eslint": "^1.10.3",
+    "eslint-config-metalab": "^1.0.0-rc.4",
+    "eslint-plugin-filenames": "^0.2.0",
+    "eslint-plugin-import": "^0.11.0",
+    "eslint-plugin-react": "^3.11.2"
+  },
+  "peerDependencies": {
+    "intl": ">=1.0.0",
+    "react-intl": ">=2.0.0",
+    "webpack": ">=1.0.0"
+  }
+}
