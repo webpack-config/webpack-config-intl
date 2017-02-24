@@ -1,6 +1,6 @@
 {
   "name": "webpack-config-intl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Neal Granger <neal@nealg.com>",
   "description": "Add support for intl to your [webpack] build.",
   "main": "intl.webpack.config.js",
