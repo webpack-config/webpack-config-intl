@@ -158,7 +158,6 @@ export default ({messagesDir = 'intl/messages'} = {}) => (config) => {
     ? messagesDir
     : join(config.context, messagesDir);
 
-  console.log('messagesDirPath', messagesDirPath);
   // Infer the current available locales from the names of the files within the
   // `/locale` directory. This way the current locales are automatically parsed
   // and can be referenced from within the build.
